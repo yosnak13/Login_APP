@@ -1,24 +1,10 @@
-# README
+# このアプリについて
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+devise gemを使用したログインアプリを作成します。
 
-Things you may want to cover:
+Ruby on Railsを学んでいて、ポートフォリオや教材を進めても身についているか微妙なので
+練習がてら簡単なログイン機能を持ったアプリを作成します。
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# ゴール
+ログイン機能を実装し、ログインに成功したら
+”おめでとうございます！@user様、ログイン成功です!!”みたいな画面を表示します。
