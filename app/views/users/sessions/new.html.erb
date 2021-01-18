@@ -1,5 +1,7 @@
 <h2>Log in</h2>
 
+<hr>
+
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email %><br />
@@ -31,6 +33,14 @@
   <div class="actions">
     <%= f.submit "Log in" %>
   </div>
-<% end %>
 
-<%= render "users/shared/links" %>
+  <div class="">
+    <%= link_to "forgot password?", new_user_password_path %>
+  </div>
+
+  <hr>
+
+  <div class="">
+    <%= link_to 'create an account', new_user_registration_path %>
+  </div>
+<% end %>
