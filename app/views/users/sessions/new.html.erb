@@ -1,24 +1,24 @@
-<h2>Log in</h2>
+<h2>ログイン</h2>
 
 <hr>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :メールアドレス %><br />
     <%= f.email_field :email, autofocus: true, required: "required", autocomplete: "email" %>
     <% if alert %>
       <span class="">
-        <strong>Email Adress is wrong</strong>
+        <strong>メールアドレスに誤りがあります</strong>
       </span>
     <% end %>
   </div>
 
   <div class="field">
-    <%= f.label :password %><br />
+    <%= f.label :パスワード %><br />
     <%= f.password_field :password, autocomplete: "current-password" %>
     <% if alert %>
       <span class="">
-        <strong>Password is wrong</strong>
+        <strong>パスワードに誤りがあります</strong>
       </span>
     <% end %>
   </div>
@@ -26,21 +26,21 @@
   <% if devise_mapping.rememberable? %>
     <div class="field">
       <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+      <%= f.label :次回から入力をスキップする %>
     </div>
   <% end %>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "ログイン" %>
   </div>
 
   <div class="">
-    <%= link_to "forgot password?", new_user_password_path %>
+    <%= link_to "パスワードを忘れたら？", new_user_password_path %>
   </div>
 
   <hr>
 
   <div class="">
-    <%= link_to 'create an account', new_user_registration_path %>
+    <%= link_to 'アカウント作成', new_user_registration_path %>
   </div>
 <% end %>
