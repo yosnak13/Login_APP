@@ -18,6 +18,7 @@ Rails.application.routes.draw do
     root :to => 'users/sessions#new'
     get 'signup', :to => 'users/registrations#new'
     get 'verify', :to => 'users/registrations#verify'
+    get 'index', :to => 'users/registrations#index'
     get 'login', :to => 'users/sessions#new'
     get 'logout', :to => 'users/sessions#destroy'
   end
